@@ -11,14 +11,14 @@ do
   esac
 done
 
-day=`date | awk '{print $1 " " $2}'`
+day=`date | awk '{print $1 " " $3}'`
 
 if [[ ! -z $d_option ]]
 then
   echo "Date is : $day"
 fi
 
-month=`date | awk '{print $3}'`
+month=`date | awk '{print $2}'`
 if [[ ! -z $m_option ]]
 then
   echo "Month is: $month"
